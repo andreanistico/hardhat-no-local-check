@@ -171,9 +171,9 @@ async function main() {
       }
     }
 
-    if (!isHardhatInstalledLocallyOrLinked()) {
-      throw new HardhatError(ERRORS.GENERAL.NON_LOCAL_INSTALLATION);
-    }
+    //if (!isHardhatInstalledLocallyOrLinked()) {
+    //  throw new HardhatError(ERRORS.GENERAL.NON_LOCAL_INSTALLATION);
+    //}
 
     if (willRunWithTypescript(hardhatArguments.config)) {
       loadTsNode(hardhatArguments.tsconfig, hardhatArguments.typecheck);
